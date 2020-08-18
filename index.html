@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>twittler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="data.js"></script>
+</head>
+<body id="body">
+  <header>
+    <h1>twittler</h1>
+  </header>
+  <section>
+      <div id = "tweet-form">
+          <label id="name"for="">UserName</label>
+          <input type="text" id='form-input'>
+          <label for="">Comment</label>
+          <textarea id="commentArea" cols="46" row="5"></textarea>
+          <button onclick="clickTweet()" id="tweet" >Tweet!</button>
+      </div>
+      <div class="tweet-list-wrap" >
+          <div id="check-new-tweet-wrap">
+            <button onclick="generateNewTweet()" id="check-new-tweet"> check new tweet </button>
+          </div>
+          <div class="tweet-list"></div>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
